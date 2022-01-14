@@ -29,10 +29,6 @@ public class AlumnoController : Controller
         return View("MultiAlumno",_context.Alumnos.ToList());
     }
 
-
-angular 
-net core 
-c#
     public IActionResult Index()
     {
         // var alumno = new Alumno();
