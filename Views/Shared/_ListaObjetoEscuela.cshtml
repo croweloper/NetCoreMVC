@@ -1,0 +1,26 @@
+@* 
+@model List<ObjetoEscuelaBase>
+    
+<div class="text-center">
+    <p>Vista Parcial</p>
+    <h2>Nombre : @Model.Nombre </h2>   
+    <h2>Id : @Model.UniqueId </h2>       
+</div> *@
+
+<table class="table table-dark table-hover">
+    <thead >
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var obj in @Model)
+    {
+        <tr>
+            <td>@obj.Id</td>
+            <td>@obj.Nombre</td>
+        </tr>
+    }
+    </tbody>
+</table>
